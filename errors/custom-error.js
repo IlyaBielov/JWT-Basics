@@ -1,7 +1,8 @@
+// базовий клас: errorHandler ловить усіх нащадків через instanceof CustomAPIError
+// statusCode тут немає — кидаємо лише підкласи, інакше res.status(undefined)
 class CustomAPIError extends Error {
-  constructor(message, statusCode) {
+  constructor(message) {
     super(message)
-    this.statusCode = statusCode // errorHandler бере звідси HTTP-статус відповіді
   }
 }
 

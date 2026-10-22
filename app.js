@@ -1,4 +1,4 @@
-require('dotenv').config(); // .env → process.env (PORT, згодом JWT_SECRET)
+require('dotenv').config(); // .env → process.env (PORT, JWT_SECRET)
 require('express-async-errors'); // помилки з async-контролерів самі йдуть в errorHandler
 
 const express = require('express');
